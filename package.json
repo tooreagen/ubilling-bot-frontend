@@ -4,12 +4,17 @@
   "private": true,
   "homepage": "https://github.com/tooreagen/ubilling-bot-frontend/",
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.15.4",
+    "@mui/material": "^5.15.4",
     "modern-normalize": "^2.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^6.0.7"
+    "styled-components": "^6.1.8"
   },
   "scripts": {
     "start": "react-scripts start",

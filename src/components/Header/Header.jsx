@@ -1,3 +1,4 @@
+import AdminInfo from 'components/AdminInfo/AdminInfo';
 import { HeaderStyle } from './HeaderStyled';
 
 const Header = () => {
@@ -10,6 +11,7 @@ const Header = () => {
           width={150}
         />
       </div>
+      <AdminInfo />
     </HeaderStyle>
   );
 };
