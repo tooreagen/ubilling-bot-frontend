@@ -1,30 +1,11 @@
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import * as React from 'react';
 import data from 'db/data';
 import ChatMessageItem from 'components/ChatMessageItem/ChatMessageItem';
+import ChatPanel from 'components/ChatPanel/ChatPanel';
 import { ChatMessageListStyled } from 'components/ChatMessageList/ChatMessageListStyled';
-
-function TabPanel(props) {
-  const { children, value, index } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`vertical-tabpanel-${index}`}
-      aria-labelledby={`vertical-tab-${index}`}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
 
 function a11yProps(index) {
   return {
@@ -67,7 +48,7 @@ const Chat = () => {
       {/* Chat box */}
       {data.map(item => {
         return (
-          <TabPanel value={value} index={item.id - 1}>
+          <ChatPanel value={value} index={item.id - 1}>
             <p>Чат з абонентом: {item.login}</p>
 
             {/* Відображення чату (переписки) */}
@@ -81,7 +62,7 @@ const Chat = () => {
                 );
               })}
             </ChatMessageListStyled>
-          </TabPanel>
+          </ChatPanel>
         );
       })}
     </Box>
