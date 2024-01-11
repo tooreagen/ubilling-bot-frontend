@@ -3,9 +3,9 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import * as React from 'react';
 import data from 'db/data';
-import ChatMessageItem from 'components/ChatMessageItem/ChatMessageItem';
-import ChatPanel from 'components/ChatPanel/ChatPanel';
-import { ChatMessageListStyled } from 'components/ChatMessageList/ChatMessageListStyled';
+import ChatMessageItem from 'components/ChatComponents/ChatMessageItem/ChatMessageItem';
+import ChatPanel from 'components/ChatComponents/ChatPanel/ChatPanel';
+import { ChatMessageListStyled } from 'components/ChatComponents/ChatMessageList/ChatMessageListStyled';
 
 function a11yProps(index) {
   return {

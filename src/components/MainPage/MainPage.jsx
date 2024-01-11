@@ -1,4 +1,4 @@
-import Chat from 'components/Chat/Chat';
+import Chat from 'components/ChatComponents/Chat/Chat';
 import { MainPageStyle } from './MainPageStyled';
 
 const MainPage = () => {
