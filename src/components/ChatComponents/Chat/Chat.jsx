@@ -26,7 +26,7 @@ const Chat = () => {
       sx={{
         flexGrow: 1,
         bgcolor: '#D2D2D7',
-        color: 'rgb(255, 0, 255)',
+        color: 'var(--message-text-color)',
         display: 'flex',
         height: 550,
       }}
@@ -40,24 +40,26 @@ const Chat = () => {
         // aria-label="Vertical tabs"
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >
-        {data.map(item => {
-          return <Tab label={item.login} {...a11yProps(item.id)} />;
+        {data.map(tab_item => {
+          return <Tab label={tab_item.login} {...a11yProps(tab_item.id)} />;
         })}
       </Tabs>
 
       {/* Chat box */}
-      {data.map(item => {
+      {data.map(chat_item => {
         return (
-          <ChatPanel value={value} index={item.id - 1}>
-            <p>Чат з абонентом: {item.login}</p>
+          <ChatPanel value={value} index={chat_item.id - 1}>
+            <p>Чат з абонентом: {chat_item.login}</p>
 
             {/* Відображення чату (переписки) */}
             <ChatMessageListStyled>
-              {item.chat.map(chat_item => {
+              {chat_item.chat.map(chat_msg_item => {
                 return (
                   <ChatMessageItem
-                    id={chat_item.id}
-                    message={chat_item.message}
+                    id={chat_msg_item.id}
+                    message={chat_msg_item.message}
+                    sender={chat_msg_item.sender}
+                    time={chat_msg_item.time}
                   />
                 );
               })}

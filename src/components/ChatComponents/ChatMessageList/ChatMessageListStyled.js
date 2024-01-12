@@ -4,5 +4,6 @@ export const ChatMessageListStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  outline: 1px solid green;
+  margin-top: 20px;
+  outline: 3px solid green;
 `;

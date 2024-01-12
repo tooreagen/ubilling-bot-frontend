@@ -1,10 +1,26 @@
-import { ChatMessageItemStyled } from './ChatMessageItemStyled';
+import dateConverter from 'helpers/dateConverter';
+import {
+  ChatMessageItemTime,
+  ChatMessageItemStyled,
+  ChatMessageItemWrapper,
+  ChatMessageItemBox,
+} from './ChatMessageItemStyled';
 
-const ChatMessageItem = ({ id, message }) => {
+const ChatMessageItem = ({ id, message, sender, time }) => {
   return (
-    <ChatMessageItemStyled>
-      {id} {message}
-    </ChatMessageItemStyled>
+    <ChatMessageItemWrapper sender={sender}>
+      <ChatMessageItemBox>
+        <ChatMessageItemStyled sender={sender}>
+          <div>Відпрвник: {sender}</div>
+          <div>
+            {id} {message}
+          </div>
+        </ChatMessageItemStyled>
+        <ChatMessageItemTime sender={sender}>
+          <div>{dateConverter(time)}</div>
+        </ChatMessageItemTime>
+      </ChatMessageItemBox>
+    </ChatMessageItemWrapper>
   );
 };
 

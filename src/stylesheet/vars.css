@@ -1,23 +1,20 @@
 :root {
+  /* black theme colors */
+  --background-color: #141a32;
+  --accent-color: #3e65fb;
+  --base-text-color: #d2d2d7;
+  --secondary-accent-color: #809cf5;
+  --secondary-text-color: #5a6583;
+
   /* fonts */
   --main-font: 'Inter', sans-serif;
   --secondary-font: 'Coolvetica', sans-serif;
 
   /* text */
-  --main-text-color: #D2D2D7;
-  --hover-text-color: rgb(122, 122, 122);
+  --main-text-color: var(--base-text-color);
+  --message-text-color: var(--background-color);
+  --time-text-color: var(--secondary-text-color);
 
   /* backgroung */
-  --main-background-color: #141A32;
+  --main-background-color: var(--background-color);
 }
-
-
-/* Кольори темної теми */
-/* 
-#141A32
-#3E65FB
-#D2D2D7
-#809CF5
-#5A6583
-*/
-
