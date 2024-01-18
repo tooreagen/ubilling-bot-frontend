@@ -9,11 +9,7 @@ const ChatPanel = ({ children, value, index }) => {
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
     >
-      {value === index && (
-        <Box sx={{ p: 2 }}>
-          {children}
-        </Box>
-      )}
+      {value === index && <Box>{children}</Box>}
     </ChatPanelStyled>
   );
 };

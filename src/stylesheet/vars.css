@@ -17,4 +17,6 @@
 
   /* backgroung */
   --main-background-color: var(--background-color);
+  --message-in-background: #ff660d;
+  --message-out-background: var(--accent-color);
 }

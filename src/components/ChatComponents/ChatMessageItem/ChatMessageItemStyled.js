@@ -22,7 +22,10 @@ export const ChatMessageItemStyled = styled.div`
   border-bottom-right-radius: ${props =>
     props.sender === 'admin' ? '0' : '10px'};
 
-  background-color: #ffffff;
+  background-color: ${props =>
+    props.sender === 'admin'
+      ? 'var(--message-out-background)'
+      : 'var(--message-in-background)'};
 `;
 
 export const ChatMessageItemTime = styled.div`

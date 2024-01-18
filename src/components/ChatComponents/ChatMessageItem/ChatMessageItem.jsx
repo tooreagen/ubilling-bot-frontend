@@ -11,7 +11,7 @@ const ChatMessageItem = ({ id, message, sender, time }) => {
     <ChatMessageItemWrapper sender={sender}>
       <ChatMessageItemBox>
         <ChatMessageItemStyled sender={sender}>
-          <div>Відпрвник: {sender}</div>
+          <div>Відправник: {sender}</div>
           <div>
             {id} {message}
           </div>
