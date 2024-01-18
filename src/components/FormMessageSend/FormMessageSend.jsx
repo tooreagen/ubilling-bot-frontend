@@ -49,6 +49,7 @@ const FormMessageSend = ({ onHeightChange }) => {
               overflow: 'hidden',
               outline: 'none',
               backgroundColor: 'var(--base-text-color)',
+              borderRadius: '20px',
             }}
           />
           <ErrorMessage component={CustomErrorMessage} name="message" />
