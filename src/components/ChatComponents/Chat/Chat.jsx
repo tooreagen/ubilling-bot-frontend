@@ -8,6 +8,7 @@ import { ChatMessageListStyled } from 'components/ChatComponents/ChatMessageList
 import ChatMessagingBox from '../ChatMessagingBox/ChatMessagingBox';
 import { ChatStyled } from './ChatStyled';
 import ChatInfo from '../ChatInfo/ChatInfo';
+import AdminInfo from 'components/AdminInfo/AdminInfo';
 
 function a11yProps(index) {
   return {
@@ -26,6 +27,7 @@ const Chat = () => {
   return (
     <>
       <ChatStyled>
+        <AdminInfo />
         {/* Chat list */}
         <Tabs
           orientation="vertical"
@@ -39,7 +41,7 @@ const Chat = () => {
             height: '100%',
             width: '20%',
             position: 'fixed',
-            top: "50px",
+            top: '50px',
             backgroundColor: 'var(--main-background-color)',
           }}
         >
