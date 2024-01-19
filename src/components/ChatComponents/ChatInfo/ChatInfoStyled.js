@@ -6,8 +6,10 @@ export const ChatInfoStyled = styled.div`
   align-items: center;
   height: 50px;
   top: 0px;
-  width: 100%;
+  width: 80%;
+  justify-content: center;
   background-color: var(--main-background-color);
+  border-bottom: 2px solid var(--line-color);
 `;
 
 export const AbonInfo = styled.div`

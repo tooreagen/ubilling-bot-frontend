@@ -35,10 +35,11 @@ const Chat = () => {
           aria-label="Vertical tabs"
           sx={{
             borderRight: 2,
-            borderColor: 'var(--secondary-text-color)',
+            borderColor: 'var(--line-color)',
             height: '100%',
             width: '20%',
             position: 'fixed',
+            top: "50px",
             backgroundColor: 'var(--main-background-color)',
           }}
         >
@@ -50,6 +51,8 @@ const Chat = () => {
                 sx={{
                   color: 'var(--main-text-color)',
                   textTransform: 'none',
+                  minHeight: '20px',
+                  padding: '5px',
                 }}
               />
             );

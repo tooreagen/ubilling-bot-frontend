@@ -31,9 +31,9 @@ const FormMessageSend = ({ onHeightChange }) => {
           <Field
             as="textarea"
             name="message"
+            maxLength={700}
             onChange={handleChange}
             onInput={event => {
-              console.log(event);
               event.target.style.height = 'auto';
               event.target.style.height = `${event.target.scrollHeight}px`;
               setHeightMessagingBox(event.target.style.height);
